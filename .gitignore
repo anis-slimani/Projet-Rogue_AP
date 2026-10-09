@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+# Identifiants captures a l'execution (ne jamais commiter)
+*.txt
+*.log
